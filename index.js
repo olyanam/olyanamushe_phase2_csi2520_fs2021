@@ -19,17 +19,19 @@ app.get("/", (req,res)=>{
 app.get("/workouts", (req,res)=>{
     res.render(`html/workouts`);
 }); 
-app.get("/calender", (req,res)=>{
-    res.render(`html/calender`);
-}); 
+
 app.get("/recipes", (req,res)=>{
     res.render(`html/recipes`);
 }); 
+app.get("/calender", (req,res)=>{
+    res.render(`html/calender`);
+}); 
+
 
 app.post('/journal', function(req,res){
     res.render('journal',{entry: req.body.entry});
 })
 
 
-const PORT = process.env.PORT|| 200; 
+const PORT = process.env.PORT|| 3000; 
 app.listen(PORT, ()=> console.log(`server running on ${PORT}`)); 

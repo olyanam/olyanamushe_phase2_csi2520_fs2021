@@ -39,8 +39,8 @@ h2{
 
 form{
     background-color:rgba(223, 80, 80, 0.97) ;
-    display: inline-block;
-    width: 15%;
+    display:inline-block;
+    width: 20%;
     padding-bottom: 1%;
 }
 
@@ -59,10 +59,18 @@ img{
     position: absolute;
     top: 22%;
     right: 36%;
-    left: 25%;
+    left: 35%;
     padding:0;
     text-align: center;
     border: 1px solid black;
+}
+.info{
+    background-color: rgba(223, 80, 80, 0.979);
+    height: 5%;
+    width: 15%;
+    position: absolute;
+    top: 12%;
+    right: 0px;
 }
 
 

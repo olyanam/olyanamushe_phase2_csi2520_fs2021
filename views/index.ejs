@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../public/stylesheet.css">
     <script src="https://kit.fontawesome.com/27373de14f.js" crossorigin="anonymous"></script>"
     <script src="../public/quote.js"></script>
+    <script src="../public/info.js"></script>
 
 </head>
 <body>
@@ -15,13 +16,24 @@
     <header>
         <h1 class="title">Health and Fitness Planner</h1>
     </header>
+    <nav>
+        <form>
+    
+            <a href="./recipes"><h2>Healthy Recipes</h1></a>
+                <img src="../public/food.jpg"alt="picture of food" width="95%">
+            <a href="./workouts"><h2>Workout Tutorials</h1></a>
+                <img src="../public/gym.jpg"alt="picture of food" width="95%">
+            <a href="./calender"><h2>Monthly Calender</h2></a>
+        </form>
+    </nav>
 
-    <form>
-        <a href="./recipes"><h2>Healthy Recipes</h1></a>
-            <img src="../public/food.jpg"alt="picture of food" width="95%">
-        <a href="./workouts"><h2>Workout Tutorials</h1></a>
-            <img src="../public/gym.jpg"alt="picture of food" width="95%">
-        <a href="./calender"><h2>Monthly Calender</h2></a>
+    <form class="info">
+        <button onclick="showTextArea();this.hidden=true" type="button" id="getTextBox">User Information</button>
+        <div class="wrapper" id="textarea" style="visibility: hidden;">
+            <textarea rows="1" cols="1" onkeypress="textTyped()" type="text" id="inputText"></textarea>        
+        </div>
+        <div class="wrapper" id="infoOutput"></div>
+        <button style="visibility: hidden;" id="submit" onclick="postInfo();this.hidden=true" type="button">Post Information</button>
     </form>
 
 
